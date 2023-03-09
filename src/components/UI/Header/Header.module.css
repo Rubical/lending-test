@@ -1,14 +1,9 @@
-@font-face {
-  font-family: "Montserrat";
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"),
-    url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
 .row {
   display: flex;
+}
+
+.main {
+  margin-right: 452px;
 }
 
 .title {
@@ -32,4 +27,64 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
+  max-width: 275px;
+}
+
+.advertising {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.advertsingTitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: end;
+  background: linear-gradient(92deg, #fcb045 27.14%, #fd1d1d 100%);
+  background-clip: text;
+  color: transparent;
+  text-align: end;
+  margin-bottom: 40px;
+}
+
+.advertisingTitleDefault {
+  color: #e4e5ea;
+}
+
+.advertisingBlock {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+  justify-content: end;
+  margin-bottom: 61px;
+}
+
+.advertisingBlockCard {
+  text-align: end;
+}
+
+.advertisingBlockCardTitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 6px;
+}
+
+.advertisingBlockCardText {
+  max-width: 164px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.button {
+  padding: 21px 35px;
+  background-color: #4077f3;
+  font-weight: 500;
+  transition: background-color ease-out 0.1s;
+}
+
+.button:hover {
+  background-color: #325dc2;
 }
