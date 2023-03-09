@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"),
+    url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.row {
+  display: flex;
+}
+
+.title {
+  max-width: 362px;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.titleLogo {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 900;
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 30px;
+}
+
+.titleText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}

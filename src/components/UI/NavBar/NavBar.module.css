@@ -1,0 +1,68 @@
+.row {
+  display: flex;
+  padding-top: 57px;
+  margin-bottom: 94px;
+}
+
+.logoBlock {
+  margin-right: 27px;
+}
+
+.logo {
+  width: 140px;
+  height: 24px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+
+.logoSlogan {
+  max-width: 165px;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 12px;
+}
+
+.list {
+  display: flex;
+  padding-top: 4px;
+  column-gap: 30px;
+}
+
+.item {
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.link {
+  color: #e4e5ea;
+  transition: color ease-out 0.1s;
+}
+
+.link:hover {
+  color: #b2b2b6;
+}
+
+.contacts {
+  display: flex;
+  margin-left: 137px;
+  padding-top: 4px;
+}
+.phoneNumber {
+  font-weight: 500;
+  line-height: 19px;
+  margin-right: 48px;
+}
+
+.phoneNubmerLink {
+  color: #e4e5ea;
+  transition: color ease-out 0.1s;
+}
+
+.phoneNubmerLink:hover {
+  color: #b2b2b6;
+}
+
+.messengers {
+  display: flex;
+  column-gap: 34px;
+}

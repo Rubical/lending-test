@@ -1,0 +1,20 @@
+.app {
+  background-color: #1e1e1e;
+}
+
+.container {
+  max-width: 1140px;
+  min-height: 100vh;
+  margin: 0 auto;
+  color: #e4e5ea;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.logoSlogan {
+  max-width: 165px;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 12px;
+}
