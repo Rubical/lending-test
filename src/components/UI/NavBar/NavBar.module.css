@@ -2,6 +2,8 @@
   display: flex;
   padding-top: 57px;
   margin-bottom: 94px;
+  position: relative;
+  z-index: 15;
 }
 
 .logoBlock {
@@ -17,6 +19,7 @@
 
 .logoSlogan {
   max-width: 165px;
+  font-family: "Montserrat", sans-serif;
   font-size: 10px;
   font-weight: 300;
   line-height: 12px;
@@ -60,9 +63,4 @@
 
 .phoneNubmerLink:hover {
   color: #b2b2b6;
-}
-
-.messengers {
-  display: flex;
-  column-gap: 34px;
 }

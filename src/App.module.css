@@ -1,5 +1,22 @@
 .app {
-  background-color: #1e1e1e;
+  --radius: 20vmax;
+  --background: #0e1014;
+
+  min-height: 100vh;
+  margin: 0;
+
+  background-image: radial-gradient(
+      circle at 50px 400px,
+      rgba(255, 21, 39, 0.15),
+      var(--background) var(--radius)
+    ),
+    radial-gradient(
+      circle at 50% 0,
+      rgba(167, 20, 248, 0.15),
+      var(--background) var(--radius)
+    );
+  background-color: var(--background);
+  background-blend-mode: lighten;
 }
 
 .container {
