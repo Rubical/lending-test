@@ -1,10 +1,12 @@
 import cl from "./NavBar.module.css";
 import logo from "./logo.svg";
-import Messengers from "../../Messengers/Messengers";
+import tgIcon from "./../../../imgs/tg-icon.svg";
+import viberIcon from "./../../../imgs/viber-icon.svg";
+import whatsappIcon from "./../../../imgs/whatsapp-icon.svg";
 
 const NavBar = () => {
   return (
-    <nav className={cl.row}>
+    <nav className={cl.navBar}>
       {/* Logo */}
 
       <div className={cl.logoBlock}>
@@ -53,7 +55,17 @@ const NavBar = () => {
             +7 555 555-55-55
           </a>
         </p>
-        <Messengers colGap={"34px"} />
+        <div className={cl.messengers}>
+          <a style={{ paddingTop: "2px" }} href="#!">
+            <img src={tgIcon}></img>
+          </a>
+          <a style={{ paddingTop: "1px" }} href="#!">
+            <img src={viberIcon}></img>
+          </a>
+          <a href="#!">
+            <img src={whatsappIcon}></img>
+          </a>
+        </div>
       </div>
     </nav>
   );

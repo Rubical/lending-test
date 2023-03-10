@@ -1,10 +1,11 @@
-.row {
+.header {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 124px;
   justify-content: space-between;
   z-index: 10;
+  padding: 0 15px;
 }
 
 .title {
@@ -54,6 +55,15 @@
   color: #e4e5ea;
 }
 
+.desktopMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileMenu {
+  display: none;
+}
+
 .advertisingBlock {
   display: flex;
   flex-wrap: wrap;
@@ -81,6 +91,7 @@
 }
 
 .button {
+  align-self: flex-end;
   padding: 21px 35px;
   background-color: #4077f3;
   font-weight: 500;
@@ -92,11 +103,106 @@
 }
 
 @media (max-width: 1200px) {
+  .header {
+    justify-content: center;
+  }
+
   .main {
     margin-right: 102px;
   }
+}
 
-  .row {
-    justify-content: center;
+@media (max-width: 850px) {
+  .header {
+    justify-content: flex-start;
+    margin-left: 200px;
+  }
+
+  .titleText {
+    margin-bottom: 45px;
+  }
+
+  .advertising {
+    align-items: flex-start;
+  }
+
+  .advertsingTitle {
+    text-align: start;
+  }
+
+  .advertisingBlock {
+    justify-content: space-between;
+  }
+
+  .advertisingBlockCard {
+    text-align: start;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    justify-content: flex-start;
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding-top: 40px;
+    margin-left: 0px;
+    margin-bottom: 59px;
+    background: radial-gradient(
+      238.53% 189.02% at 3.2% 3.49%,
+      rgba(255, 246, 233, 0.1) 0%,
+      rgba(26, 29, 35, 0.1) 26.62%,
+      rgba(26, 29, 35, 0.1) 52.1%,
+      rgba(26, 29, 35, 0.01) 70.17%,
+      rgba(26, 29, 35, 0) 100%
+    );
+    backdrop-filter: blur(7.5px);
+  }
+
+  .main {
+    margin-right: 0px;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .titleLogo {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 15px;
+  }
+  .advertsingTitle {
+    font-weight: 500;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: grid;
+    grid-template-columns: 114px 141px;
+    column-gap: 10px;
+    row-gap: 14px;
+  }
+
+  .mobileMenuItem {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+
+  .mobileMenuItem::before {
+    content: "—";
+    background: linear-gradient(92deg, #fcb045 27.14%, #fd1d1d 100%);
+    background-clip: text;
+    color: transparent;
+    padding-right: 5px;
   }
 }

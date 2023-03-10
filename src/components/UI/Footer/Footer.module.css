@@ -1,5 +1,5 @@
 .footer {
-  padding-bottom: 20px;
+  padding: 0 15px 20px 15px;
 }
 
 .row {
@@ -15,6 +15,7 @@
   font-size: 14px;
   line-height: 17px;
   font-weight: 700;
+  text-transform: uppercase;
   margin-bottom: 20px;
 }
 
@@ -30,6 +31,15 @@
   line-height: 19px;
 }
 
+.phoneNumber {
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.address {
+  margin-top: 12px;
+}
+
 .link {
   color: #e4e5ea;
   transition: color ease-out 0.1s;
@@ -37,6 +47,25 @@
 
 .link:hover {
   color: #b2b2b6;
+}
+
+.aboutCompany {
+  margin-right: 98px;
+}
+
+.menu {
+  margin-right: 52px;
+}
+
+.additionalInfo {
+  margin-right: 163px;
+  padding-top: 37px;
+}
+
+.messengers {
+  display: flex;
+  column-gap: 14px;
+  justify-content: end;
 }
 
 .copyright {
@@ -49,21 +78,100 @@
 }
 
 .contacts {
-  text-align: "end";
+  text-align: end;
 }
 
 @media (max-width: 1200px) {
-  .row {
+  .footer {
     justify-content: center;
-    column-gap: 48px;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .contacts {
-    text-align: "start";
+    text-align: start;
+  }
+
+  .aboutCompany {
+    margin-right: 0;
+  }
+
+  .additionalInfo {
+    margin-right: 0;
+    padding-top: 0;
+  }
+
+  .copyright {
+    align-items: center;
+  }
+
+  .messengers {
+    justify-content: flex-start;
   }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 600px) {
+  .footer {
+    background: #0e1014;
+    padding-top: 41px;
+    padding-bottom: 60px;
+  }
+
   .row {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+  }
+
+  .column {
+    align-items: flex-start;
+  }
+
+  .title {
+    font-size: 12px;
+    line-height: 14.5px;
+  }
+
+  .item {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .aboutCompany {
+    width: 100%;
+  }
+
+  .phoneNumber {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+  }
+
+  .additionalInfo {
+    padding-top: 35px;
+  }
+
+  .menu {
+    margin-right: 48px;
+  }
+
+  .phoneNumber {
+    margin-bottom: 1px;
+  }
+
+  .address {
+    margin-top: 2px;
+  }
+
+  .copyright {
+    align-items: flex-start;
   }
 }

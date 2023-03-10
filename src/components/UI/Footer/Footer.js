@@ -1,15 +1,14 @@
-import Messengers from "../../Messengers/Messengers";
 import cl from "./Footer.module.css";
+import tgIcon from "./../../../imgs/tg-icon.svg";
+import viberIcon from "./../../../imgs/viber-icon.svg";
+import whatsappIcon from "./../../../imgs/whatsapp-icon.svg";
 
 const Footer = () => {
   return (
     <footer className={cl.footer}>
       <div className={cl.row}>
-        <div
-          style={{ marginRight: "98px" }}
-          className={`${cl.column} ${cl.aboutCompany}`}
-        >
-          <h4 className={cl.title}>О КОМПАНИИ</h4>
+        <div className={`${cl.column} ${cl.aboutCompany}`}>
+          <h4 className={cl.title}>О компании</h4>
           <ul className={cl.list}>
             <li className={cl.item}>
               <a className={cl.link} href="#!">
@@ -23,8 +22,8 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div style={{ marginRight: "52px" }} className={cl.column}>
-          <h4 className={cl.title}>МЕНЮ</h4>
+        <div className={`${cl.column} ${cl.menu}`}>
+          <h4 className={cl.title}>Меню</h4>
           <ul className={cl.list}>
             <li className={cl.item}>
               <a className={cl.link} href="#!">
@@ -53,10 +52,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div
-          style={{ marginRight: "163px", paddingTop: "37px" }}
-          className={cl.column}
-        >
+        <div className={`${cl.column} ${cl.additionalInfo}`}>
           <ul className={cl.list}>
             <li className={cl.item}>
               <a className={cl.link} href="#!">
@@ -86,17 +82,27 @@ const Footer = () => {
           </ul>
         </div>
         <div className={`${cl.column} ${cl.contacts}`}>
-          <h4 className={cl.title}>КОНТАКТЫ</h4>
+          <h4 className={cl.title}>Контакты</h4>
           <ul className={cl.list}>
-            <li style={{ marginBottom: "12px" }} className={cl.item}>
+            <li className={`${cl.item}  ${cl.phoneNumber}`}>
               <a className={cl.link} href="#!">
                 +7 555 555-55-55
               </a>
             </li>
             <li className={cl.item}>
-              <Messengers colGap={"14px"} justContent={"flex-end"} />
+              <div className={cl.messengers}>
+                <a style={{ paddingTop: "2px" }} href="#!">
+                  <img src={tgIcon}></img>
+                </a>
+                <a style={{ paddingTop: "1px" }} href="#!">
+                  <img src={viberIcon}></img>
+                </a>
+                <a href="#!">
+                  <img src={whatsappIcon}></img>
+                </a>
+              </div>
             </li>
-            <li style={{ marginTop: "12px" }} className={cl.item}>
+            <li className={`${cl.item} ${cl.address}`}>
               Москва, Путевой проезд 3с1, к 902
             </li>
           </ul>

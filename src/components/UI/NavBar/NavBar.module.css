@@ -1,6 +1,6 @@
-.row {
+.navBar {
   display: flex;
-  padding-top: 57px;
+  padding: 57px 15px 0 15px;
   margin-bottom: 94px;
   position: relative;
   z-index: 15;
@@ -45,6 +45,11 @@
   color: #b2b2b6;
 }
 
+.messengers {
+  display: flex;
+  column-gap: 34px;
+}
+
 .contacts {
   display: flex;
   margin-left: 137px;
@@ -66,7 +71,7 @@
 }
 
 @media (max-width: 1200px) {
-  .row {
+  .navBar {
     justify-content: center;
   }
   .logoBlock {
@@ -81,10 +86,10 @@
 }
 
 @media (max-width: 600px) {
-  .row {
-    margin: 0 -20px;
-    background: #1e1e1e;
-    padding: 20px 0;
+  .navBar {
+    background: #0e1014;
+    padding: 20px 15px;
+    margin-bottom: 0px;
   }
 
   .list {
