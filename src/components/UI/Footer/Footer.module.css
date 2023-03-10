@@ -4,7 +4,10 @@
 
 .row {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
   margin-bottom: 33px;
+  justify-content: center;
 }
 
 .title {
@@ -43,4 +46,24 @@
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   line-height: 15px;
+}
+
+.contacts {
+  text-align: "end";
+}
+
+@media (max-width: 1200px) {
+  .row {
+    justify-content: center;
+    column-gap: 48px;
+  }
+
+  .contacts {
+    text-align: "start";
+  }
+}
+
+@media (max-width: 910px) {
+  .row {
+  }
 }

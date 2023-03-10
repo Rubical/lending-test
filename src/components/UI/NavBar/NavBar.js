@@ -38,7 +38,7 @@ const NavBar = () => {
             Кейсы
           </a>
         </li>
-        <li className={cl.item}>
+        <li className={`${cl.item} ${cl.certifs}`}>
           <a className={cl.link} href="#!">
             Сертификаты
           </a>

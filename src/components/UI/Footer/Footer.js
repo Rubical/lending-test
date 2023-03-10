@@ -5,7 +5,10 @@ const Footer = () => {
   return (
     <footer className={cl.footer}>
       <div className={cl.row}>
-        <div style={{ marginRight: "98px" }} className={cl.column}>
+        <div
+          style={{ marginRight: "98px" }}
+          className={`${cl.column} ${cl.aboutCompany}`}
+        >
           <h4 className={cl.title}>О КОМПАНИИ</h4>
           <ul className={cl.list}>
             <li className={cl.item}>
@@ -82,7 +85,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div style={{ textAlign: "end" }} className={cl.column}>
+        <div className={`${cl.column} ${cl.contacts}`}>
           <h4 className={cl.title}>КОНТАКТЫ</h4>
           <ul className={cl.list}>
             <li style={{ marginBottom: "12px" }} className={cl.item}>

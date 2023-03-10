@@ -1,10 +1,10 @@
 .row {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 124px;
-}
-
-.main {
-  margin-right: 452px;
+  justify-content: space-between;
+  z-index: 10;
 }
 
 .title {
@@ -35,6 +35,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  max-width: 330px;
 }
 
 .advertsingTitle {
@@ -88,4 +89,14 @@
 
 .button:hover {
   background-color: #325dc2;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    margin-right: 102px;
+  }
+
+  .row {
+    justify-content: center;
+  }
 }

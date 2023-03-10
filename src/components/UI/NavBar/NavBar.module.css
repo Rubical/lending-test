@@ -64,3 +64,37 @@
 .phoneNubmerLink:hover {
   color: #b2b2b6;
 }
+
+@media (max-width: 1200px) {
+  .row {
+    justify-content: center;
+  }
+  .logoBlock {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contacts {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .row {
+    margin: 0 -20px;
+    background: #1e1e1e;
+    padding: 20px 0;
+  }
+
+  .list {
+    column-gap: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .certifs {
+    display: none;
+  }
+}
