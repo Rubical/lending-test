@@ -114,7 +114,7 @@ const Footer = () => {
           <h4 className={cl.title}>Контакты</h4>
           <ul className={cl.list}>
             <li className={`${cl.item}  ${cl.phoneNumber}`}>
-              <a className={cl.link} href="#!">
+              <a className={cl.link} href="tel:75555555555">
                 +7 555 555-55-55
               </a>
             </li>
