@@ -61,7 +61,7 @@
   width: 43px;
   height: 43px;
   left: 29px;
-  top: 457px;
+  top: 461px;
   border-radius: 50%;
   background: radial-gradient(
     64% 64% at 27.25% 26.5%,
@@ -71,6 +71,7 @@
     rgba(130, 25, 25, 0.248) 100%
   );
   box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  filter: blur(2.5px);
   backdrop-filter: blur(2px);
 }
 
@@ -80,8 +81,8 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  left: 296px;
-  top: 291px;
+  right: 0%;
+  top: 294px;
   border-radius: 50%;
 
   background: radial-gradient(

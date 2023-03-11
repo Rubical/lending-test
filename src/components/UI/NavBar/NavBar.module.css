@@ -93,6 +93,10 @@
   }
 
   .list {
+    padding: 0;
+  }
+
+  .list {
     column-gap: 16px;
     text-transform: uppercase;
     font-weight: 500;

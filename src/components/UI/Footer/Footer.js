@@ -81,6 +81,35 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+        <div className={`${cl.column} ${cl.additionalInfoMobile}`}>
+          <ul className={cl.list}>
+            <li className={cl.item}>
+              <a className={cl.link} href="#!">
+                Благодарность клиентов
+              </a>
+            </li>
+            <li className={cl.item}>
+              <a className={cl.link} href="#!">
+                Кейсы
+              </a>
+            </li>
+            <li className={cl.item}>
+              <a className={cl.link} href="#!">
+                Сертификаты
+              </a>
+            </li>
+            <li className={cl.item}>
+              <a className={cl.link} href="#!">
+                Блог на Youtube
+              </a>
+            </li>
+            <li className={cl.item}>
+              <a className={cl.link} href="#!">
+                Вопрос / Ответ
+              </a>
+            </li>
+          </ul>
+        </div>
         <div className={`${cl.column} ${cl.contacts}`}>
           <h4 className={cl.title}>Контакты</h4>
           <ul className={cl.list}>
