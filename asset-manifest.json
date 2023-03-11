@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/lending-test/static/css/main.fd5d976a.css",
+    "main.css": "/lending-test/static/css/main.5f60099a.css",
     "main.js": "/lending-test/static/js/main.d8d87d1c.js",
     "static/media/logo.svg": "/lending-test/static/media/logo.2e08d1bd108cb8b2aee116b1817d851e.svg",
     "static/media/whatsapp-icon.svg": "/lending-test/static/media/whatsapp-icon.c3d7a933a8355b23bc435ff74d3849c1.svg",
     "static/media/viber-icon.svg": "/lending-test/static/media/viber-icon.cf9c56ecdadaadbb83004223aedc739c.svg",
     "index.html": "/lending-test/index.html",
     "static/media/tg-icon.svg": "/lending-test/static/media/tg-icon.ec28ad3ae01fc187af4c6626094c876b.svg",
-    "main.fd5d976a.css.map": "/lending-test/static/css/main.fd5d976a.css.map",
+    "main.5f60099a.css.map": "/lending-test/static/css/main.5f60099a.css.map",
     "main.d8d87d1c.js.map": "/lending-test/static/js/main.d8d87d1c.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd5d976a.css",
+    "static/css/main.5f60099a.css",
     "static/js/main.d8d87d1c.js"
   ]
 }
